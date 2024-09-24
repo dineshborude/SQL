@@ -35,3 +35,6 @@ Using the ORDER BY Clause: To sort the results,
 use the ORDER BY clause. For example, to order customers by last_name in ascending order:
 
 select saledate, amount from sales where year(saledate) = 2021 and amount > 25000 order by amount desc;
+
+select saledate, amount,boxes from sales where year(saledate) = 2021 and boxes > 10 and boxes < 50  order by amount desc;
+
